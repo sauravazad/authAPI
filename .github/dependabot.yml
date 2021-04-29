@@ -1,0 +1,52 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: mongoose
+    versions:
+    - 5.11.14
+    - 5.11.15
+    - 5.11.16
+    - 5.11.17
+    - 5.11.18
+    - 5.11.19
+    - 5.12.0
+    - 5.12.1
+    - 5.12.2
+    - 5.12.3
+    - 5.12.5
+  - dependency-name: redis
+    versions:
+    - 3.0.2
+    - 3.1.0
+    - 3.1.1
+  - dependency-name: connect-redis
+    versions:
+    - 5.0.0
+    - 5.1.0
+  - dependency-name: nodemon
+    versions:
+    - 2.0.7
+  - dependency-name: express-session
+    versions:
+    - 1.17.1
+  - dependency-name: morgan
+    versions:
+    - 1.10.0
+  - dependency-name: express
+    versions:
+    - 4.17.1
+  - dependency-name: express-jwt
+    versions:
+    - 6.0.0
+  - dependency-name: errorhandler
+    versions:
+    - 1.5.1
+  - dependency-name: passport
+    versions:
+    - 0.4.1
